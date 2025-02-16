@@ -24,3 +24,5 @@ Uses Next.js and TypeScript
     - Probably a more elegant way to do it, but again, the time constraints
 - Code organisation
     - Could have code placed in better places, but it's good enough for the scope of the project
+- Typescript
+    - Would have used types more, but again, time constraints
