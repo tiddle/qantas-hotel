@@ -20,7 +20,7 @@ Located in `/app` and `/components`, everything else was there by default.
     - Needs mocking of calls
     - Generally needs tests that take up a lot of dev time if you're doing it from scratch, due to research, mocking, weird test requirments
 - Styles
-    - Styles are incomplete due, tried to demonstrate most of the different css skills required
+    - Styles are incomplete, tried to demonstrate most of the different css skills required
     - Would have done the "rating" system with an icon library and a loop
 - Price sorting 
     - Decided to do it server side as it made the most amount of sense, you probably won't have ALL hotels on page at once so server side made more sense
