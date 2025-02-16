@@ -10,6 +10,10 @@ Uses Next.js and TypeScript
 1. Install dependencies (npm install)
 2. Run the tests (npm run test)
 
+## My Code
+
+Located in `/app` and `/components`, everything else was there by default.
+
 ## Notes
 - Tests are incomplete, just ran out of time
     - Needs page tests
