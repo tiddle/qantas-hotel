@@ -1,0 +1,4 @@
+.hotelListing {
+  display: grid;
+  gap: 16px;
+}
