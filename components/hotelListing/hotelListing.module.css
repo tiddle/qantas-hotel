@@ -1,4 +1,79 @@
 .hotelListing {
   display: grid;
   gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid grey;
+  width: clamp(1024px, 100%);
+}
+
+.hotel {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: fit-content(145px) 2fr;
+}
+
+.image {
+  position: relative;
+  border: 1px solid grey;
+  padding: 0;
+  margin: 0;
+}
+
+.deal {
+  position: absolute;
+  top: 8px;
+  background-color: #fff;
+  color: red;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.room {
+  border-top: 1px solid grey;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.price {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.savings {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+.night {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.address {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+
+.priceSection {
+  align-self: end;
+  text-align: right;
 }

@@ -1,0 +1,11 @@
+.filterBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: clamp(1024px, 100%);
+}
+
+.filter {
+  border: 1px solid;
+  text-align: right;
+}
