@@ -14,7 +14,6 @@ export default async function Page({ searchParams }) {
 
 
   const sortedHotels = sortHotels(results, sortType);
-  console.log(sortedHotels);
 
   return (
     <main className={style.container}>
