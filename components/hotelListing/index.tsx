@@ -1,5 +1,4 @@
 import styles from "./hotelListing.module.css";
-console.log(styles);
 
 export default function HotelListing({ hotels }) {
   return (

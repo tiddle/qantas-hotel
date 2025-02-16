@@ -1,43 +1,26 @@
-# Next.js + Jest
+# Carlo's Qantas App
 
-This example shows how to configure Jest to work with Next.js.
+Uses Next.js and TypeScript
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Jest with the App Router and React Server Components.
-
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-jest&project-name=with-jest&repository-name=with-jest)
-
-## How to Use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
-
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
-
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
+## Running Locally
+1. Install dependencies (npm install)
+2. Run the app (npm run dev)
 
 ## Running Tests
+1. Install dependencies (npm install)
+2. Run the tests (npm run test)
 
-```bash
-npm test
-```
-
-```bash
-yarn test
-```
-
-```bash
-pnpm test
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Notes
+- Tests are incomplete, just ran out of time
+    - Needs page tests
+    - Needs mocking of calls
+    - Generally needs tests that take up a lot of dev time if you're doing it from scratch, due to research, mocking, weird test requirments
+- Styles
+    - Styles are incomplete due, tried to demonstrate most of the different css skills required
+    - Would have done the "rating" system with an icon library and a loop
+- Price sorting 
+    - Decided to do it server side as it made the most amount of sense, you probably won't have ALL hotels on page at once so server side made more sense
+    - Set an initial sort, but probably isn't ideal
+    - Probably a more elegant way to do it, but again, the time constraints
+- Code organisation
+    - Could have code placed in better places, but it's good enough for the scope of the project

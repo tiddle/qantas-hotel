@@ -3,9 +3,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   width: clamp(1024px, 100%);
+  margin: 16px 0;
 }
 
 .filter {
-  border: 1px solid;
   text-align: right;
 }

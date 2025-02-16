@@ -7,16 +7,14 @@ import HotelFilter from "@/components/hotelFilter";
 
 import data from './data.json';
 
-export default async function Page() {
-  // simulate API call
-  const { results } = await Promise.resolve(data);
+export default async function Page({ searchParams }) {
+  const results = await getHotels();
+  const { sort } = await searchParams;
+  const sortType = sort || "low-high";
 
 
-  console.log(results);
-
-  console.log(getLocations(results));
-
-  const sortedHotels = sortHotels(results, "low-high");
+  const sortedHotels = sortHotels(results, sortType);
+  console.log(sortedHotels);
 
   return (
     <main className={style.container}>
@@ -53,3 +51,10 @@ export function sortHotels(hotelArray, sortType) {
     return b.offer.displayPrice.amount - a.offer.displayPrice.amount;
   });
 }
+
+async function getHotels() {
+  // simulate API call
+  const { results } = await Promise.resolve(data);
+  return results;
+}
+
